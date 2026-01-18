@@ -2,37 +2,57 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>XIT FF 😈</title>
+  <title>AVISO DE SEGURANÇA</title>
   <style>
     body {
-      background-color: black;
-      color: red;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      background: #000;
+      color: #00ff9c;
+      font-family: monospace;
       margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
     }
-    h1 {
-      font-size: 50px;
-      animation: pisca 1s infinite;
+    .box {
+      border: 2px solid #00ff9c;
+      padding: 30px;
+      max-width: 600px;
+      animation: flicker 1.5s infinite;
     }
-    @keyframes pisca {
+    h1 { color: #ff3b3b; }
+    .small {
+      margin-top: 15px;
+      color: #aaa;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+    @keyframes flicker {
       0% { opacity: 1; }
-      50% { opacity: 0.2; }
+      50% { opacity: 0.7; }
       100% { opacity: 1; }
     }
   </style>
 </head>
 <body>
 
-<h1>😂 VOCÊ FOI TROLLADO 😂</h1>
+  <div class="box">
+    <h1>⚠️ SISTEMA COMPROMETIDO ⚠️</h1>
+    <p>Dispositivo “evadido” por <b>VÍRUS: CAVALO DE TROIA</b></p>
+    <p>Status: <b>ACESSO SIMULADO</b></p>
+    <p>Logs coletados: <b>FAKE</b></p>
+    <p>Resultado: <b>VOCÊ FOI TROLLADO 😂</b></p>
+    <div class="small">
+      Isso é apenas uma página de zoeira. Nenhum dado foi coletado.
+    </div>
+  </div>
 
-<script>
-  alert("VOCÊ FOI TROLLADO 😈😂");
-</script>
+  <script>
+    setTimeout(() => {
+      alert("Calma 😅 isso é só trollagem. Nenhum vírus aqui.");
+    }, 800);
+  </script>
 
 </body>
 </html>
